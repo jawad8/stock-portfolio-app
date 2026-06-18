@@ -1,4 +1,6 @@
-const BASE_URL = "https://stock-market-api-k9vl.onrender.com/api";
+const BASE_URL =
+  import.meta.env.VITE_API_BASE_URL ||
+  "https://stock-market-api-k9vl.onrender.com/api";
 
 export async function getStocksData() {
   const response = await fetch(`${BASE_URL}/stocksdata`);

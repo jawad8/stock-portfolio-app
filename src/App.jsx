@@ -32,10 +32,6 @@ export default function App() {
           getProfileData(),
         ]);
 
-        console.log("chartRes:", chartRes);
-        console.log("statsRes:", statsRes);
-        console.log("profileRes:", profileRes);
-
         const parsedChartData =
           chartRes?.stocksData?.[0] ||
           chartRes?.stocksData ||
@@ -103,8 +99,9 @@ export default function App() {
   return (
     <div className="app">
       <header className="page-header">
-        <h1>Stocks Portfolio Dashboard</h1>
-        <p>Mini project assignment using React and Chart.js</p>
+        <p className="eyebrow">Market intelligence dashboard</p>
+        <h1>MarketLens</h1>
+        <p>Explore price history, company context, and performance at a glance.</p>
       </header>
 
       <main className="main-layout">
